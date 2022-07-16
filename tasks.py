@@ -1,7 +1,7 @@
 from celery import Celery
 #from collections import Counter
 from config import rds, TWEET, WORDSET, WORD_BUCKETS, WORD_PREFIX 
-app = Celery('2021MCS2157', broker='pyamqp://guest@localhost//',backend='redis://localhost:6579', worker_prefetch_multiplier=1)
+app = Celery('2021MC31698', broker='pyamqp://guest@localhost//',backend='redis://localhost:6579', worker_prefetch_multiplier=1)
 
 #######################################################################################
 # Note - I have used some part of trend.py and serial.py to match ground truth
